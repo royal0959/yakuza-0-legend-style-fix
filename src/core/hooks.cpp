@@ -75,7 +75,7 @@ static int32_t __fastcall hk_get_current_style()
     if (style == 3)
         return -1;
 
-    if (was_right_analog_pressed || (GetAsyncKeyState(VK_TAB) & 0x8000))
+    if (was_right_analog_pressed || (GetAsyncKeyState(VK_SPACE) & 0x8000))
     {
         should_change_to_legend = true;
         return 3;
